@@ -7,7 +7,7 @@ root = Tk()
 root.geometry('300x500')
 root.resizable(False, False)
 root.title('BMI Calculator')
-root.iconbitmap("C:/Users/hendri3x22/Desktop/bmi_calulator/bmi.ico")
+root.iconbitmap("bmi.ico")
 root.configure(bg='#0c1234')
 
 
@@ -82,7 +82,7 @@ result = Label(root, text="", height=6, fg='white', width=20, font=('Arial', 15,
 result.place(x=30, y=337)
 
 # -----creating a photo image-----
-imageIcon = Image.open('C:/Users/hendri3x22/Desktop/bmi_calulator/icon_hd.png')
+imageIcon = Image.open('icon_hd.png')
 pos = ImageTk.PhotoImage(imageIcon)
 resized = imageIcon.resize((45, 45))
 newImage = ImageTk.PhotoImage(resized)
